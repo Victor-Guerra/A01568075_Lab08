@@ -54,5 +54,17 @@ describe('givenMoreThanOneDigitInDecimalReturnOctal', function () {
 
     });
 
+    it('convert(2048) = 4000', function () {
+        // Given 
+        var a = 2048;
+        var expectedResult = 4000;
+
+        // When
+        var actualResult = OCfunc.convert(a);
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+
+    });
 })
 

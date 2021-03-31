@@ -40,5 +40,19 @@ describe('givenMoreThanOneDigitInDecimalReturnOctal', function () {
         assert.strictEqual(expectedResult, actualResult);
 
     });
+
+    it('convert(95) = 137', function () {
+        // Given 
+        var a = 95;
+        var expectedResult = 137;
+
+        // When
+        var actualResult = OCfunc.convert(a);
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+
+    });
+
 })
 

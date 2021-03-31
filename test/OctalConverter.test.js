@@ -27,3 +27,18 @@ describe('givenSingleDigitinDecimalReturninOctal', function () {
     });
 })
 
+describe('givenMoreThanOneDigitInDecimalReturnOctal', function () {
+    it('convert(8) = 10', function () {
+        // Given 
+        var a = 8;
+        var expectedResult = 10;
+
+        // When
+        var actualResult = OCfunc.convert(a);
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+
+    });
+})
+
